@@ -15,6 +15,7 @@ class CreateLandingPagesTable extends Migration
     {
         Schema::create('landing_pages', function (Blueprint $table) {
             $table->increments('id');
+            $table->unsignedInteger('program_id');
             $table->string('program');
             $table->string('channel')->nullable();
             $table->string('initiative')->nullable();
@@ -25,6 +26,7 @@ class CreateLandingPagesTable extends Migration
             $table->string('audience');
             $table->string('left_form');
             $table->text('comments');
+            $table->timestamps();            
         });
     }
 
