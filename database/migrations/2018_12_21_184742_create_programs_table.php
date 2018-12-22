@@ -15,27 +15,27 @@ class CreateProgramsTable extends Migration
     {
         Schema::create('programs', function (Blueprint $table) {
             $table->increments('id');
-            $table->unsignedInteger('partner_id');
+            $table->unsignedInteger('partner_id')->nullable();
             $table->string('code');
-            $table->string('active');
-            $table->text('name');
-            $table->string('partner');
-            $table->string('strategy');
-            $table->unsignedInteger('bu');
-            $table->string('location');
-            $table->string('vertical');
-            $table->string('subvertical');
-            $table->string('type');
-            $table->string('level');
-            $table->string('priority');
-            $table->float('ltv');
-            $table->string('concentrations');
-            $table->string('tracks');
-            $table->string('accreditation');
-            $table->string('online_percent');
-            $table->string('start_year');
-            $table->string('start_month');
-            $table->unsignedInteger('entry_points');
+            $table->string('active')->nullable();
+            $table->text('name')->nullable();
+            $table->string('partner')->nullable();
+            $table->string('strategy')->nullable();
+            $table->unsignedInteger('bu')->nullable();
+            $table->string('location')->nullable();
+            $table->string('vertical')->nullable();
+            $table->string('subvertical')->nullable();
+            $table->string('type')->nullable();
+            $table->string('level')->nullable();
+            $table->string('priority')->nullable();
+            $table->float('ltv')->nullable();
+            $table->string('concentrations')->nullable();
+            $table->string('tracks')->nullable();
+            $table->string('accreditation')->nullable();
+            $table->string('online_percent')->nullable();
+            $table->string('start_year')->nullable();
+            $table->string('start_month')->nullable();
+            $table->unsignedInteger('entry_points')->nullable();
         });
     }
 

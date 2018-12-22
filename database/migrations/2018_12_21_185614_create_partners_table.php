@@ -17,16 +17,15 @@ class CreatePartnersTable extends Migration
             $table->increments('id');
             $table->string('code');
             $table->string('school');
-            $table->string('type');
-            $table->string('url');
-            $table->string('facebook');
-            $table->string('state');
-            $table->unsignedInteger('zip');
-            $table->string('region');
-            $table->float('latitude');
-            $table->float('longitude');
-            $table->string('time_zone');
-            $table->timestamps();
+            $table->string('type')->nullable();
+            $table->string('url')->nullable();
+            $table->string('facebook')->nullable();
+            $table->string('state')->nullable();
+            $table->unsignedInteger('zip')->nullable();
+            $table->string('region')->nullable();
+            $table->float('latitude')->nullable();
+            $table->float('longitude')->nullable();
+            $table->string('time_zone')->nullable();
         });
     }
 
