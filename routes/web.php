@@ -18,3 +18,15 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+// Programs
+Route::resource('programs', 'ProgramController');
+
+// Budget
+Route::resource('budget', 'BudgetController');
+
+// Notes
+Route::resource('notes', 'NoteController');
+
+// Tasks (Action Items)
+Route::resource('tasks', 'TaskController');
