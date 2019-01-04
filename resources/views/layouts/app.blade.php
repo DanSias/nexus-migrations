@@ -21,6 +21,7 @@
 </head>
 <body>
     <div id="app">
+        <nexus-header></nexus-header>
         <nav-component></nav-component>
 
         <example-component></example-component>
