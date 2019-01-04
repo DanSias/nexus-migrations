@@ -17,7 +17,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index');
 
 // Programs
 Route::resource('programs', 'ProgramController');
@@ -30,3 +30,12 @@ Route::resource('notes', 'NoteController');
 
 // Tasks (Action Items)
 Route::resource('tasks', 'TaskController');
+
+/**
+ * API Routes
+ * 
+ * @param filter object
+ * 
+ * @return JSON response
+ */
+Route::get('/metrics/data', 'MetricController@data');
