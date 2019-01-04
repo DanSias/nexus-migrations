@@ -26,6 +26,7 @@
     "dependencies": {
         "@vuikit/icons": "^0.8.1",
         "@vuikit/theme": "^0.8.1",
+        "portal-vue": "^1.5.0",
         "vue-router": "^3.0.2",
         "vuex": "^3.0.1",
         "vuikit": "^0.8.10"

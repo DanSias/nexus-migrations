@@ -3939,6 +3939,11 @@ popper.js@^1.12:
   version "1.14.6"
   resolved "https://registry.yarnpkg.com/popper.js/-/popper.js-1.14.6.tgz#ab20dd4edf9288b8b3b6531c47c361107b60b4b0"
 
+portal-vue@^1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/portal-vue/-/portal-vue-1.5.0.tgz#3519a99a9035e83c000fdcb2a445a7d2fbc66deb"
+  integrity sha512-QzO/FQl4+SvS1pFd/DfAuIMH16WVXc7Yn8yze50uwxvzN54OuDApKfyygEvWnQ8adKrxbinQlqcsuHUyRxW3Qg==
+
 portfinder@^1.0.9:
   version "1.0.20"
   resolved "https://registry.yarnpkg.com/portfinder/-/portfinder-1.0.20.tgz#bea68632e54b2e13ab7b0c4775e9b41bf270e44a"
